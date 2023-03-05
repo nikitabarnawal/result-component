@@ -8,7 +8,7 @@ const ActionCard = () => {
       <section className="summary-txt">Summary</section>
       <section className="action">
         {resultData.map((data) => (
-          <Card {...data} />
+          <Card key={data.category} {...data} />
         ))}
       </section>
       <button type="button" className="btn-continue">
